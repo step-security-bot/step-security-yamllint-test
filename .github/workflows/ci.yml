@@ -1,0 +1,13 @@
+---
+name: Yamllint
+on:
+  pull_request: {}
+  push:
+    branches:
+      - main
+jobs:
+  yaml-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ibiqlik/action-yamllint@v3

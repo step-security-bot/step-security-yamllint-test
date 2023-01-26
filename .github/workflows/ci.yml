@@ -2,7 +2,9 @@
 name: Yamllint
 on:
   - pull_request
-  - push
+  - push:
+      branches:
+        - main
 jobs:
   yaml-lint:
     runs-on: ubuntu-latest
